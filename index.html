@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Calculadora de IMC</title>
+  </head>
+  <body>
+    <div id="conteiner">
+        <main id="conteiner-calc-imc">
+            <form>
+                <div id="title">
+                    <h1>Calculadora de</h1>
+                    <button id="btn-on-table">imc</button>
+                </div>
+                <label class="insert-info" for="weight">
+                    <h3>Peso:</h3>
+                    <input type="number" id="weight"/>
+                </label>
+                <label class="insert-info" for="height">
+                    <h3>Altura:</h3>
+                    <input type="number" id="height"/>
+                </label>
+                <button class="btns" id="btn-calc">Calcular</button>
+            </form>
+            <span id="result-area">
+            </span>
+        </main>
+        <section id="imc-table">
+            <button id="close-table">
+                x
+            </button>
+            <table>
+              <thead>
+                <tr>
+                  <th>IMC</th>
+                  <th>Classificação</th>
+                  <th>Obesidade</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Menor que 18</td>
+                  <td>Magreza</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>Entre 18.5 e 24.9</td>
+                  <td>Peso normal</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>Entre 25 e 29.9</td>
+                  <td>Sobrepeso</td>
+                  <td>I</td>
+                </tr>
+                <tr>
+                  <td>Entre 30 e 34.9</td>
+                  <td>Obesidade grau I</td>
+                  <td>II</td>
+                </tr>
+                <tr>
+                  <td>Entre 35 e 39.9</td>
+                  <td>Obesidade grau II (severa)</td>
+                  <td>III</td>
+                </tr>
+                <tr>
+                  <td>Maior ou igual a 40</td>
+                  <td>Obesidade grau III (mórbida)</td>
+                  <td>IV</td>
+                </tr>
+              </tbody>
+            </table>
+        </section>
+    </div>
+  </body>
+</html>
